@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright (c) &amp;#36;today.year, &amp;#36;username&#10;All rights reserved.&#10;&#10;NOTICE OF LICENSE&#10;&#10;This source file is subject to the 3-Clause BSD&#10;(also &quot;New BSD&quot;, or &quot;Modified BSD&quot;) License (BSD-3-Clause)&#10;that is bundled with this package in the file LICENSE.&#10;It is also available through the world-wide-web at this URL:&#10;https://opensource.org/licenses/BSD-3-Clause&#10;&#10;@author    &amp;#36;username&#10;@copyright &amp;#36;today.year, &amp;#36;username&#10;@license   https://opensource.org/licenses/BSD-3-Clause (3-Clause BSD License)" />
+    <option name="myName" value="Eanlabs" />
+  </copyright>
+</component>
