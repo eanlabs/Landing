@@ -7822,6 +7822,7 @@ img.mfp-img {
   -webkit-animation: none;
 }
 .ct-preloader {
+  /*
   top: 0;
   position: fixed;
   z-index: 99999999999999999;
@@ -7829,6 +7830,16 @@ img.mfp-img {
   height: 100vh;
   background: #fff;
   overflow: hidden;
+  */
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: #fff;
+  z-index: 9999999999999999;
+  overflow: hidden;
+  top: 0;
 }
 .ct-preloader .ct-preloader-content {
   position: absolute;

@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2024, Eanlabs
  * All rights reserved.
@@ -16,30 +15,38 @@
  * @license   https://opensource.org/licenses/BSD-3-Clause (3-Clause BSD License)
  */
 
-import React from "react";
-import Header from "./components/header";
-import MainSlider from "./components/mainSlider/mainSlider";
-import IconBox from "./components/iconBox/iconbox";
-import About from "./components/about/about";
-import Services from "./components/services";
-import Testimonials from "./components/testimonials/testimonials";
-import Obituaries from "./components/obituaries";
-import ContactUs from "./components/contactus";
-import Footer from "./components/footer/footer";
+import React, { Suspense } from "react";
+import Loader from './components/loader/loader';
+import Header from './components/header';
+import MainSlider from './components/mainSlider/mainSlider';
+import IconBox from './components/iconBox/iconbox';
+import Works from "./components/works";
+import About from './components/about/about';
+import Services from './components/services';
+import Testimonials from './components/testimonials/testimonials';
+import Obituaries from './components/obituaries';
+import ContactUs from './components/contactus';
+import Footer from './components/footer/footer';
 
 function App() {
     return (
-        <div id="ct-js-wrapper" className="ct-pageWrapper">
-            <Header />
-            <MainSlider />
-            <IconBox />
-            <About />
-            <Services />
-            <Testimonials />
-            <Obituaries />
-            <ContactUs />
-            <Footer />
-        </div>
+        <Suspense fallback={<Loader />}>
+            <>
+                <Loader />
+                <div id="ct-js-wrapper" className="ct-pageWrapper">
+                    <Header />
+                    <MainSlider />
+                    <IconBox />
+                    <Works />
+                    <About />
+                    <Services />
+                    <Testimonials />
+                    <Obituaries />
+                    <ContactUs />
+                    <Footer />
+                </div>
+            </>
+        </Suspense>
     )
 }
 

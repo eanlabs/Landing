@@ -50,6 +50,7 @@ function Footer() {
                 <div className="container">
                     <div className="ct-u-displayTableVertical">
                         <div className="ct-u-displayTableCell ct-col4 text-center">
+                            {/*
                             <ul className="ct-socials list-unstyled list-inline">
                                 <li data-toggle="tooltip" data-placement="bottom" title="Facebook" className="list-inline-item"><a
                                     href="https://www.facebook.com/createITpl"><i className="fa fa-facebook fa-lg"></i></a>
@@ -60,12 +61,13 @@ function Footer() {
                                 <li data-toggle="tooltip" data-placement="bottom" title="Google Plus" className="list-inline-item"><a href="#"><i
                                     className="fa fa-google-plus fa-lg"></i></a></li>
                             </ul>
+                            */}
                         </div>
                     </div>
                     <a href="#" className="ct-scrollUpButton ct-scrollUpButton--Top ct-js-btnScrollUp">
-               <span className="ct-sectioButton--square">
-                   <i className="fa fa-angle-double-up"></i>
-               </span>
+                       <span className="ct-sectioButton--square">
+                           <i className="fa fa-angle-double-up"></i>
+                       </span>
                     </a>
                 </div>
             </div>

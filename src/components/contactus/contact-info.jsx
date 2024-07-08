@@ -32,26 +32,35 @@ function ContactInfo() {
                 <Col lg={{span: 4, offset: 2}} md={6} sm={6}>
                     <div className="ct-contactBox  ct-u-paddingTop50">
                         <ul className="ct-contactBox-list ct-contactBox-list--smallPadding list-unstyled list-inline">
-                            <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active">
-                                <a href="#"><i className="fa fa-phone fa-2x"></i></a>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
+                                <a href="https://wa.me/+972545732280">
+                                    <i className="fa-brands fa-whatsapp fa-2x"></i>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
+                                <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a>
                             </li>
                         </ul>
-                        <span className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive ">0 800 123 4567</span>
+                        <span
+                            className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive ">+972 54-573-2280</span>
                     </div>
                 </Col>
                 <Col lg={6} md={6} sm={6}>
                     <div className="ct-contactBox ct-u-paddingTop50">
                         <ul className="ct-contactBox-list ct-contactBox-list--smallPadding list-unstyled list-inline">
                             <li data-toggle="tooltip" data-placement="bottom" title="Send a message" className="active">
-                                <a href="#"><i className="fa fa-envelope fa-2x"></i></a>
+                                <a href="mailto:memorealy@gmail.com"><i className="fa fa-envelope fa-2x"></i></a>
                             </li>
                         </ul>
-                        <span className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive">info@example.com</span>
+                        <span className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive">
+                            memorealy@gmail.com
+                        </span>
                     </div>
                 </Col>
             </Row>
+            {/*
             <Row>
-                <Col lg={{span: 6, offset: 2}} md={8} sm={12}>
+            <Col lg={{span: 6, offset: 2}} md={8} sm={12}>
                     <div className="ct-contactBox ct-u-paddingTop40">
                         <ul className="ct-contactBox-list ct-contactBox-list--smallPadding list-unstyled list-inline">
                             <li data-toggle="tooltip" data-placement="bottom" title="Get more info" className="active">
@@ -62,6 +71,7 @@ function ContactInfo() {
                     </div>
                 </Col>
             </Row>
+            */}
         </>
     )
 }

@@ -20,6 +20,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Image from 'react-bootstrap/Image';
+import Langs from "./langs";
 
 function NavBar() {
 
@@ -27,9 +29,9 @@ function NavBar() {
     const class_switch = isMobile ? 'ct-navbarMobile ct-navbarMobile--inverse' : 'navbar navbar-default ct-stretchedMenu'
 
     return(
-        <Navbar expand="md" className={class_switch} data-bs-theme="dark">
+        <Navbar expand="md" className={class_switch} data-bs-theme="dark" sticky="top">
             <Container>
-                <Navbar.Brand href="/" className="d-md-none" ><img src="assets/images/logo.png" alt="Website Logo"/></Navbar.Brand>
+                <Navbar.Brand href="/" className="d-md-none" ><Image src="assets/images/logo.png" alt="Website Logo"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
                 <Navbar.Offcanvas
                     id="offcanvasNavbar-expand-md"
@@ -54,6 +56,7 @@ function NavBar() {
                                 <li className="onepage"><Nav.Link href="#contact">Contact Us</Nav.Link></li>
                             </ul>
                         </Nav>
+                        <Langs />
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>

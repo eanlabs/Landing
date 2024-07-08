@@ -169,3 +169,20 @@
 .owl-buttons .owl-next:active {
     color: #d1d1d1;
 }
+
+.swiper-button-prev, .swiper-button-next {
+    color: #fff;
+}
+
+.ct-topBar .ct-topBar-col1 {
+    width: 40%;
+}
+
+.ct-topBar .ct-topBar-col2, .ct-topBar .ct-topBar-col3 {
+    width: 30%;
+}
+
+.alert .close {
+    background: transparent;
+    border: none;
+}

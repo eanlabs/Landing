@@ -17,6 +17,7 @@
 
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 function TopBar() {
     return (
@@ -24,29 +25,42 @@ function TopBar() {
             <Container>
                 <div className="ct-u-displayTableVertical ct-u-marginTopMinus10">
                     <div className="ct-u-displayTableCell ct-topBar-col1">
-                        <a href="/"><img src="assets/images/logo-small.png" alt="Logo Image"/></a>
+                        <a href="/">
+                            <Image src="assets/images/logo-small.png" alt="Logo Image"/>
+                        </a>
                     </div>
                     <div className="ct-u-displayTableCell ct-topBar-col2">
                         <div className="ct-contactBox">
                             <ul className="ct-contactBox-list list-unstyled list-inline">
-                                <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active"><a
-                                    href="#"><i className="fa fa-phone fa-2x"></i></a></li>
+                                <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
+                                    <a href="https://wa.me/+972545732280"><i className="fa-brands fa-whatsapp fa-2x"></i></a>
+                                </li>
+                                <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
+                                    <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a>
+                                </li>
                             </ul>
-                            <span
-                                className="ct-contactBox-content ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">0 800 123 4567</span>
-                            <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">Call Us 24/7</span>
+                            <span className="ct-contactBox-content ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">
+                                +972 54-573-2280
+                            </span>
+                            <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
+                                Call Us 24/7
+                            </span>
                             <div className="clearfix"></div>
                         </div>
                     </div>
                     <div className="ct-u-displayTableCell ct-topBar-col3">
                         <div className="ct-contactBox">
                             <ul className="ct-contactBox-list ct-contactBox-list--smallPadding list-unstyled list-inline">
-                                <li data-toggle="tooltip" data-placement="bottom" title="Send a message"
-                                    className="active"><a href="#"><i className="fa fa-envelope fa-2x"></i></a></li>
+                                <li data-toggle="tooltip" data-placement="bottom" title="Send a message" className="active">
+                                    <a href="mailto:memorealy@gmail.com"><i className="fa fa-envelope fa-2x"></i></a>
+                                </li>
                             </ul>
-                            <span
-                                className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize24 ct-fs-i ct-u-colorMotive">info@example.com</span>
-                            <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">We will respond within 12 h</span>
+                            <span className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize24 ct-fs-i ct-u-colorMotive">
+                                memorealy@gmail.com
+                            </span>
+                            <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
+                                We will respond within 12 h
+                            </span>
                             <div className="clearfix"></div>
                         </div>
                     </div>

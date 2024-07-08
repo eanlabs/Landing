@@ -22,7 +22,7 @@ import Col from "react-bootstrap/Col";
 
 function About() {
     return (
-        <section className="ct-aboutSection ct-u-traingleFigure section" id="about-us">
+        <section className="ct-aboutSection ct-u-backgroundBlack section" id="about-us">
             <Container>
                 <Row className="ct-u-paddingBottom100 ct-u-paddingTop60">
                     <Col md={12} className="text-center">

@@ -16,10 +16,37 @@
  */
 
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+import { useTranslation } from 'react-i18next';
 
-function Langs(props) {
+function Langs() {
+    const { i18n } = useTranslation();
+    const handleClick = (e, lang) => {
+        i18n.changeLanguage(lang);
+    }
+
+
     return (
-        <div></div>
+        <ul className="list-inline list-unstyled text-center">
+            <li key={0} className="list-inline-item">
+                <Button  type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'en')}>
+                    <Image src="assets/images/us.png" style={{ width: '50%' }}/>
+                </Button>
+            </li>
+
+            <li key={1} className="list-inline-item">
+                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'hb')}>
+                    <Image src="assets/images/il.png" style={{ width: '50%' }}/>
+                </Button>
+            </li>
+
+            <li key={2} className="list-inline-item">
+                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'ru')}>
+                    <Image src="assets/images/ru.png" style={{ width: '50%' }}/>
+                </Button>
+            </li>
+        </ul>
     );
 }
 

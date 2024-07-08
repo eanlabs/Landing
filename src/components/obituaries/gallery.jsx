@@ -18,16 +18,21 @@
 import React from "react";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Image from "react-bootstrap/Image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Navigation} from 'swiper/modules';
+
 
 function Gallery() {
     return (
         <Row className="ct-u-paddingBottom90">
             <Col md={12}>
-                <div className="ct-gallery ct-gallery--col3 ct-gallery--withSpacing  ct-gallery--opacityBorder">
-                    jdjfsdlfjlsdfdslk
+                <div className="ct-gallery-item ct-gallery-item--masonry hidden">
+                    <div className="ct-gallery-itemInner ct-gallery-itemInner--ribbon ct-frame">
+                        ldksjfsddfjsdkjfjdks
+                    </div>
                 </div>
             </Col>
-
         </Row>
 );
 }
