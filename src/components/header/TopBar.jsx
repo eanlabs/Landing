@@ -18,8 +18,11 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
+import { useTranslation } from 'react-i18next';
 
 function TopBar() {
+    const {t} = useTranslation('header');
+
     return (
         <div className="ct-topBar ct-topBar--small d-none d-md-block">
             <Container>
@@ -43,7 +46,7 @@ function TopBar() {
                                 +972 54-573-2280
                             </span>
                             <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
-                                Call Us 24/7
+                                {t('CallUs')}
                             </span>
                             <div className="clearfix"></div>
                         </div>
@@ -59,7 +62,7 @@ function TopBar() {
                                 memorealy@gmail.com
                             </span>
                             <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
-                                We will respond within 12 h
+                                {t('Respond')}
                             </span>
                             <div className="clearfix"></div>
                         </div>

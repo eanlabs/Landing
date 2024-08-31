@@ -1,0 +1,62 @@
+{
+  "Title": "What services",
+  "Body": {
+    "Desc1": "Experts recommend, ideally, to carry out standard cleaning at least 3 times a year. Ideally, before and after the onset of cold weather, as well as in between - in the summer. Capital polishing of the stele using special agents, depending on the stone, once every 3-5 years. Cleaning the grave with this frequency will keep the place in good condition and preserve the original appearance of the granite monument for decades.",
+    "Desc2": "Our employees personally travel to any cemeteries in Kyiv and the Oblast to carry out work. Also, our office can take professional photos of the burial place and fulfill your personal orders (ones not included in the list above).",
+    "Desc3": "Almost any work is included in the complex of grave care services at the cemetery in Kyiv. The company will take constant control over the burial site and the surrounding area. Prices for cleaning graves may vary depending on the amount of performed work, but each client is guaranteed to receive an individual approach.",
+    "list1": {
+      "l0": "Landscaping of graves, planting flowers and shrubs, cutting grass, collecting withered plants, watering flowers;",
+      "l1": "Taking care of the area around the grave, sprinkling gravel, sand, marble and granite pebbles;",
+      "l2": "Cleaning the grave from snow, leaves, branches, and trash;",
+      "l3": "Washing a tombstone, monuments, and crypts; painting a metal fence/cross;",
+      "l4": "Placing bouquets or baskets of fresh flowers (dried flowers in winter) and wreaths on the date specified by you;"
+    },
+    "list2": {
+      "l0": "Constant care of the grave (according to the client's schedule);",
+      "l1": "One-time cleaning of the grave;",
+      "l2": "Grave cleaning on a certain date (as agreed with the client);",
+      "l3": "Service subscription (yearly care of the grave)."
+    },
+    "list3": {
+      "title": "Cemetery where you can order grave cleaning:",
+      "l0": "Darnyts’ke;",
+      "l1": "Sovs’ke;",
+      "l2": "Berkovets’ke;",
+      "l3": "Lukyanivs’ke;",
+      "l4": "Svyatoshyns’ke;",
+      "l5": "Lisove;",
+      "l6": "Kurenivs’ke;",
+      "l7": "Shulyavs’ke;",
+      "l8": "Zhulyans’ke;",
+      "l9": "Pivnichne;",
+      "l10": "Zvirynetske;",
+      "l11": "Troyeshchyns’ke;",
+      "l12": "Bortnytske;",
+      "l13": "Pivdenne;",
+      "l14": "Baykove;",
+      "l15": "Solomyans’ke."
+    }
+  },
+  "advantages": {
+    "title": "Main advantages",
+    "list1": {
+      "l0": "affordable prices for grave care in Kyiv;",
+      "l1": "quality work of any complexity;",
+      "l2": "professional consultation on any issue;",
+      "l3": "detailed pricelist for services;",
+      "l4": "a detailed report on the work performed.",
+      "descr": "In addition, our employees are as polite as possible, enter any situation, and show sympathy for your grief"
+    },
+    "list2": {
+      "descr": "With Memoria it is easy to order general cleaning, landscaping, or any other grave care service.",
+      "l0": "Leave a request directly on the website or contact us by phone.",
+      "l1": "Tell us exactly what services you are interested in: whether it is cleaning, planting flowers, care, or some other specialized service.",
+      "l2": "We calculate how much the specified set of works costs. The price depends on the area of the burial site, the type and amount of work.",
+      "l3": "We start performing work after an advance payment of 30% of the cost of the service ordered.",
+      "l4": "We find the grave according to the customer's instructions or geodata.",
+      "l5": "Before starting the work and after its completion, our experts take photos of the grave so that you can see the result.",
+      "l6": "All services include the cost of our materials;",
+      "l7": "We provide a one-year warranty for all work performed."
+    }
+  }
+}

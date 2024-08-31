@@ -18,12 +18,15 @@
 import React from 'react';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useTranslation } from "react-i18next";
 
 function Title() {
+    const {t} = useTranslation('service');
+
     return (
         <Row>
-            <Col md={12} className="text-center">
-                <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite section" id="services">services</h3>
+            <Col md={12} className="text-center ct-u-paddingTop70">
+                <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite section" id="services">{t('Title')}</h3>
                 <span className="ct-iconDivider ct-iconDivider--dark ct-iconDivider--withOpacity">
                     <i className="fa fa-leaf fa-2x"></i>
                 </span>

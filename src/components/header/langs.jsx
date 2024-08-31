@@ -23,6 +23,13 @@ import { useTranslation } from 'react-i18next';
 function Langs() {
     const { i18n } = useTranslation();
     const handleClick = (e, lang) => {
+        document.documentElement.lang = lang;
+        if (lang !== 'he') {
+            document.documentElement.dir = 'ltr';
+        } else {
+            //document.documentElement.dir = 'rtl';
+            //document.documentElement.className = "rtl";
+        }
         i18n.changeLanguage(lang);
     }
 
@@ -36,7 +43,7 @@ function Langs() {
             </li>
 
             <li key={1} className="list-inline-item">
-                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'hb')}>
+                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'he')}>
                     <Image src="assets/images/il.png" style={{ width: '50%' }}/>
                 </Button>
             </li>

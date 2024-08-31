@@ -40,7 +40,6 @@ function App() {
                     <Works />
                     <About />
                     <Services />
-                    <Testimonials />
                     <Obituaries />
                     <ContactUs />
                     <Footer />

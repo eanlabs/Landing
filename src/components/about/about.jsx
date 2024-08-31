@@ -19,28 +19,30 @@ import React from 'react';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useTranslation } from 'react-i18next';
 
 function About() {
+    const {t} = useTranslation('about');
+
     return (
         <section className="ct-aboutSection ct-u-backgroundBlack section" id="about-us">
             <Container>
                 <Row className="ct-u-paddingBottom100 ct-u-paddingTop60">
                     <Col md={12} className="text-center">
-                        <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">About Memoria</h3>
+                        <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('Title')}</h3>
                         <span className="ct-iconDivider ct-iconDivider--dark ct-iconDivider--withOpacity">
                             <i className="fa fa-leaf fa-2x"></i>
                         </span>
                     </Col>
                     <Col md={6} sm={12} className="ct-aboutSection-imageBox ct-u-paddingTop50">
-                        <img src="assets/images/content/about-us.jpg" alt="Image"/>
+                        <img src="assets/images/content/about-us.png" alt="Image"/>
                     </Col>
                     <Col md={6} sm={12} className="ct-aboutSection-descriptionBox ct-u-paddingTop50">
                         <p className="ct-u-fontSize24 ct-u-colorWhite ct-u-lineHeight36">
-                            Funeral Home Memoria started
-                            its activity nearly 95 years ago. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
+                            {t('Body')}
                         </p>
                         <br/>
+                        {/*
                         <p className="ct-u-colorWhite ct-u-lineHeight30 ct-u-paddingBottom30">
                             Lorem ipsum dolor sit
                             amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia
@@ -55,6 +57,7 @@ function About() {
                                 <a href="#" className="btn btn-primary ct-btn--border">Testimonials</a>
                             </li>
                         </ul>
+                        */}
                     </Col>
                 </Row>
             </Container>

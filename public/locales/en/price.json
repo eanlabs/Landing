@@ -1,0 +1,100 @@
+{
+  "Title": "Pricelist",
+  "Econom": {
+    "title": "Econom",
+    "price": "$90 - once a month",
+    "l0": "Grass weeding;",
+    "l1": "Wet cleaning of tombstones;",
+    "l2": "Moss cleaning;",
+    "l3": "Weeding of planted plants;",
+    "l4": "Scavenging;",
+    "l5": "Photo report."
+  },
+  "Standard": {
+    "title": "Standard",
+    "price": "$190 - once a month",
+    "l0": "Grass weeding;",
+    "l1": "Wet cleaning of tombstones;",
+    "l2": "Moss cleaning;",
+    "l3": "Weeding of planted plants;",
+    "l4": "Scavenging;",
+    "l5": "Landscaping (planting of flowers and plants);",
+    "l6": "Bushes cutting;",
+    "l7": "Laying fresh flowers, lighting an altar lamp;",
+    "l8": "Photo and video report."
+  },
+  "VIP": {
+    "title": "VIP",
+    "price": "$390 – twice a month",
+    "l0": "Grass weeding;",
+    "l1": "Wet cleaning of tombstones;",
+    "l2": "Moss cleaning;",
+    "l3": "Weeding of planted plants;",
+    "l4": "Scavenging;",
+    "l5": "Landscaping (planting of flowers and plants);",
+    "l6": "Bushes cutting;",
+    "l7": "Laying fresh flowers, lighting an altar lamp;",
+    "l8": "Sand and earth refilling;",
+    "l9": "Restoration of decorative stones;",
+    "l10": "Photo and video report."
+  },
+  "Additional": {
+    "title": "Additional services",
+    "cleaning": {
+      "title": "Territory cleaning",
+      "price": "$100",
+      "desc": "grass weeding, cleaning and removal of garbage, washing the tombstone"
+    },
+    "landscaping_cr": {
+      "title": "Landscaping care",
+      "price": "$90",
+      "desc": "cutting the grass at the burial site by hand; watering green spaces; plants’ partial renewal or planting (landscaping plants price is not included)"
+    },
+    "cutting": {
+      "title": "Trees cutting",
+      "price": "$150",
+      "desc": "cutting of trees and bushes"
+    },
+    "landscaping": {
+      "title": "Landscaping",
+      "price": "$70",
+      "desc": "planting individual decorative shrubs at the burial site (the cost of the shrub is not included)"
+    },
+    "sprinkle": {
+      "title": "Sprinkle refilling",
+      "price": "$60",
+      "desc": "backfilling of earth and sand after natural shrinkage, correction of the burial mound"
+    },
+    "decorating": {
+      "title": "Decorating with stones",
+      "price": "$300",
+      "desc": "filling with marble or granite pebbles, crushed stone"
+    },
+    "painting": {
+      "title": "Painting",
+      "price": "$100",
+      "desc": "painting of a metal fence/cross"
+    },
+    "installation": {
+      "title": "Dismantling / installation",
+      "price": "$600",
+      "desc": "installation and repair of granite structures; foundation pouring; laying tiles or paving stones"
+    },
+    "flowers": {
+      "title": "Flowers",
+      "price": "$20",
+      "desc": "laying fresh and artificial flowers, wreaths, lighting a candle"
+    },
+    "artwork": {
+      "title": "Artwork restoration",
+      "price": "$400",
+      "desc": "restoration of the portrait, inscription on the tombstone"
+    },
+    "winter": {
+      "title": "Care in Winter",
+      "price": "$70",
+      "desc": "snow removal; decorating with coniferous branches"
+    }
+  },
+  "final_disco": "The cost of services may depend on various factors and is calculated individually for each case. When forming the price, the degree of pollution of the burial site, the amount of work and necessary additional services, as well as weather conditions and the time of year are usually evaluated. However, the final cost remains low, and to save your time and effort, it is much more profitable to contact specialists.\nThe price depends on the number of necessary extra services and additional factors, more accurate numbers can be found by calling the numbers on our website."
+}

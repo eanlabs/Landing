@@ -21,6 +21,7 @@ import App from './App.jsx';
 import './i18n';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@fortawesome/fontawesome-free/css/brands.min.css';
 import '@fortawesome/fontawesome-free/css/solid.min.css';
