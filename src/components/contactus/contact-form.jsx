@@ -18,11 +18,13 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
+    const {t} = useTranslation('contacts');
     const [validated, setValidated] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
@@ -66,36 +68,36 @@ function ContactForm() {
                     <Row>
                         <Col md={12}>
                             <Form.Group controlId="formGroupName" className="form-group">
-                                <Form.Control required placeholder="Your name" name="user_name" className="ct-fs-i"/>
+                                <Form.Control required placeholder={t('form.name')} name="user_name" className="ct-fs-i"/>
                                 <Form.Control.Feedback type="invalid" tooltip>
-                                    Please fill out this field
+                                    {t('form.tooltip')}
                                 </Form.Control.Feedback>
                             </Form.Group>
                         </Col>
                         <Col md={12}>
                             <Form.Group controlId="formGroupPhone" className="form-group">
-                                <Form.Control required type="phone" placeholder="Phone no." name="user_phone"
+                                <Form.Control required type="phone" placeholder={t('form.phone')} name="user_phone"
                                               className="ct-fs-i"/>
                                 <Form.Control.Feedback type="invalid" tooltip>
-                                    Please fill out this field
+                                    {t('form.tooltip')}
                                 </Form.Control.Feedback>
                             </Form.Group>
                         </Col>
                         <Col md={12}>
                             <Form.Group controlId="formGroupEmail" className="form-group">
-                                <Form.Control required type="email" placeholder="Email address" name="user_email"
+                                <Form.Control required type="email" placeholder={t('form.mail')} name="user_email"
                                               className="ct-fs-i"/>
                                 <Form.Control.Feedback type="invalid" tooltip>
-                                    Please fill out this field
+                                    {t('form.tooltip')}
                                 </Form.Control.Feedback>
                             </Form.Group>
                         </Col>
                         <Col md={12}>
                             <Form.Group controlId="formGroupMassage" className="form-group">
-                                <Form.Control required placeholder="What can we do for you?" name="message1"
+                                <Form.Control required placeholder={t('form.todo')} name="message1"
                                               className="ct-fs-i"/>
                                 <Form.Control.Feedback type="invalid" tooltip>
-                                    Please fill out this field
+                                    {t('form.tooltip')}
                                 </Form.Control.Feedback>
                             </Form.Group>
                         </Col>
@@ -105,7 +107,7 @@ function ContactForm() {
                             </Form.Group>
                         </Col>
                         <Col md={12} className="text-center">
-                            <Button bsPrefix="btn" variant="default" type="submit">Send Message</Button>
+                            <Button bsPrefix="btn" variant="default" type="submit">{t('form.send')}</Button>
                         </Col>
                     </Row>
                 </Form>
@@ -113,14 +115,14 @@ function ContactForm() {
                 {success && (
                 <div className="successMessage alert alert-success ct-frame ct-u-marginTop30">
                     <Button type="button" bsPrefix="close" aria-hidden={true} onClick={() => {setSuccess(false)}}>x</Button>
-                    Thank You!
+                    {t('form.success')}
                 </div>)
                 }
 
                 {error && (
                 <div className="errorMessage alert alert-danger ct-frame ct-u-marginTop30">
                     <Button type="button" bsPrefix="close" aria-hidden={true} onClick={() => {setError(false)}}>x</Button>
-                    Ups! An error occured. Please try again later.
+                    {t('form.error')}
                 </div>)
                 }
 

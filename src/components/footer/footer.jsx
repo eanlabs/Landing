@@ -16,32 +16,28 @@
  */
 
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+    const {t} = useTranslation('header');
     return (
         <footer className="ct-footer ct-footer--small">
             <div className="ct-footerUp">
                 <ul className="list-inline list-unstyled text-center">
                     <li className="list-inline-item">
-                        <a href="index.html">Home</a>
+                        <a href="#home">{t('menu.home')}</a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="obituaries.html">Obituaries</a>
+                        <a href="#about-us">{t('menu.about')}</a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="flowers-and-gifts.html">Flowers & Gifts</a>
+                        <a href="#services">{t('menu.services')}</a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="our-services.html">Our Services</a>
+                        <a href="#obituaries">{t('menu.price')}</a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="about-us.html">About Us</a>
-                    </li>
-                    <li className="list-inline-item">
-                        <a href="grief-support-resources.html">Grief & Healing</a>
-                    </li>
-                    <li className="list-inline-item">
-                        <a href="contact.html">Contact Us</a>
+                        <a href="#contact">{t('menu.contact')}</a>
                     </li>
                 </ul>
             </div>

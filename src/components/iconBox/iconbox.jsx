@@ -19,8 +19,11 @@ import React from 'react';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useTranslation } from 'react-i18next';
 
 function IconBox() {
+    const {t} = useTranslation('header');
+
     return (
         <section className="ct-iconBoxesSection ct-u-backgroundDarkGrey ct-u-paddingBottom20">
             <Container>
@@ -31,10 +34,10 @@ function IconBox() {
                                 <span className="ct-iconDivider"><i className="fa fa-info fa-2x"></i></span>
                             </div>
                             <div className="ct-iconBoxes-title">
-                                read more about our company
+                                {t('info.left')}
                             </div>
                             <div className="ct-iconBoxes-button">
-                                <a href="#about-us" className="btn btn-default ct-js-btnScroll">Learn more</a>
+                                <a href="#about-us" className="btn btn-default ct-js-btnScroll">{t('morebtn')}</a>
                             </div>
                         </div>
                     </Col>
@@ -43,10 +46,9 @@ function IconBox() {
                             <div className="ct-iconBoxes-icon">
                                 <span className="ct-iconDivider"><i className="fa fa-server fa-2x"></i></span>
                             </div>
-                            <div className="ct-iconBoxes-title">check what services we offer
-                            </div>
+                            <div className="ct-iconBoxes-title">{t('info.right')}</div>
                             <div className="ct-iconBoxes-button">
-                                <a href="#services" className="btn btn-default ct-js-btnScroll">Learn more</a>
+                                <a href="#services" className="btn btn-default ct-js-btnScroll">{t('morebtn')}</a>
                             </div>
                         </div>
                     </Col>

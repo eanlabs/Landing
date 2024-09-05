@@ -27,6 +27,7 @@ i18n
     .init({
         fallbackLng: 'en',
         //debug: true,
+        detection: {convertDetectedLanguage: (lng) => lng.slice(0, 2)},
         interpolation: {
             escapeValue: false,
         }

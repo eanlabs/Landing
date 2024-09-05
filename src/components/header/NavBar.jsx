@@ -20,6 +20,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useTranslation } from 'react-i18next';
 import Image from 'react-bootstrap/Image';
 import Langs from "./langs";
 
@@ -27,6 +28,7 @@ function NavBar() {
 
     const isMobile = window.innerWidth < 767
     const class_switch = isMobile ? 'ct-navbarMobile ct-navbarMobile--inverse' : 'navbar navbar-default ct-stretchedMenu'
+    const {t} = useTranslation('header');
 
     return(
         <Navbar expand="md" className={class_switch} data-bs-theme="dark" sticky="top">
@@ -49,11 +51,11 @@ function NavBar() {
                     <Offcanvas.Body>
                         <Nav className="justify-content-start">
                             <ul className={("nav navbar-nav pull-left ") + (isMobile ? ' ct-menuMobile-navbar list-unstyled' : '')}>
-                                <li className="onepage"><Nav.Link href="#home">Home</Nav.Link></li>
-                                <li className="onepage"><Nav.Link href="#about-us">About us</Nav.Link></li>
-                                <li className="onepage"><Nav.Link href="#services">Services</Nav.Link></li>
-                                <li className="onepage"><Nav.Link href="#obituaries">Obituaries</Nav.Link></li>
-                                <li className="onepage"><Nav.Link href="#contact">Contact Us</Nav.Link></li>
+                                <li className="onepage"><Nav.Link href="#home">{t('menu.home')}</Nav.Link></li>
+                                <li className="onepage"><Nav.Link href="#about-us">{t('menu.about')}</Nav.Link></li>
+                                <li className="onepage"><Nav.Link href="#services">{t('menu.services')}</Nav.Link></li>
+                                <li className="onepage"><Nav.Link href="#obituaries">{t('menu.price')}</Nav.Link></li>
+                                <li className="onepage"><Nav.Link href="#contact">{t('menu.contact')}</Nav.Link></li>
                             </ul>
                         </Nav>
                         <Langs />

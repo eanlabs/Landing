@@ -16,23 +16,30 @@
  */
 
 import React from 'react';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
-function Title() {
-    const {t} = useTranslation('header');
+function Seo() {
+    const {t, i18n} = useTranslation('seo');
+    const lang = i18n.language;
+    console.log(lang);
+    let dir = "ltr";
+    let boClass = '';
+    if (lang === 'he') {
+        dir = 'rtl';
+        boClass = 'rtl';
+    }
+
 
     return (
-        <Row className="text-center ct-u-paddingTop70 ct-u-paddingBottom30">
-            <Col md={12}>
-                <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('works')}</h3>
-                <span className="ct-iconDivider ct-iconDivider--dark ct-iconDivider--withOpacity">
-                    <i className="fa fa-leaf fa-2x"></i>
-                </span>
-            </Col>
-        </Row>
+        <Helmet>
+            <html lang={lang} dir={dir} />
+            <title>{t('title')}</title>
+            <meta name="description" content={t('description')} />
+            <meta name="keywords" content={t('keywords')} />
+            <body className={boClass} />
+        </Helmet>
     );
 }
 
-export default Title;
+export default Seo;

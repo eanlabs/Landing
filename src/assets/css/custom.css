@@ -186,3 +186,13 @@
     background: transparent;
     border: none;
 }
+
+.rtl .ct-contactBox ul.ct-contactBox-list {
+    float: right;
+    padding-left: 20px;
+}
+
+.rtl .ct-contactBox .ct-contactBox-content,
+.rtl .ct-contactBox .ct-contactBox-info {
+    float: right;
+}

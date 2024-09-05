@@ -1,4 +1,17 @@
 {
+  "phone": "+972 54-573-2280",
   "CallUs": "Call Us 24/7",
-  "Respond": "We will respond within 12 h"
+  "mail": "memorealy@gmail.com",
+  "Respond": "We will respond within 12 h",
+  "title": "Contact Us",
+  "form": {
+    "tooltip": "Please fill out this field",
+    "name": "Your name",
+    "phone": "Phone #",
+    "mail": "Email",
+    "todo": "What can we do for you?",
+    "send": "Send Message",
+    "success": "Thank You!",
+    "error": "Ups! An error occured. Please try again later."
+  }
 }

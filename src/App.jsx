@@ -16,6 +16,7 @@
  */
 
 import React, { Suspense } from "react";
+import Seo from "./components/seo/seo";
 import Loader from './components/loader/loader';
 import Header from './components/header';
 import MainSlider from './components/mainSlider/mainSlider';
@@ -32,6 +33,7 @@ function App() {
     return (
         <Suspense fallback={<Loader />}>
             <>
+                <Seo />
                 <Loader />
                 <div id="ct-js-wrapper" className="ct-pageWrapper">
                     <Header />

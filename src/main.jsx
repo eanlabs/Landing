@@ -17,6 +17,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from "react-helmet-async";
 import App from './App.jsx';
 import './i18n';
 
@@ -29,10 +30,13 @@ import '@fortawesome/fontawesome-free/css/regular.min.css';
 import 'swiper/css/bundle';
 import './assets/css/styles.css';
 import './assets/css/motive.css';
-import './assets/css/custom.css'
+import './assets/css/custom.css';
+import './assets/css/fa-rtl.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
   </React.StrictMode>,
 )

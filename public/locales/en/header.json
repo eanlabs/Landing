@@ -1,4 +1,15 @@
 {
-  "CallUs": "Call Us 24/7",
-  "Respond": "We will respond within 12 h"
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "price": "Price",
+    "contact": "Contact Us"
+  },
+  "info": {
+    "left": "Read more about our company",
+    "right": "Check what services we offer"
+  },
+  "works": "Our Works",
+  "morebtn": "Learn more"
 }

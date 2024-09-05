@@ -48,7 +48,7 @@
     "landscaping_cr": {
       "title": "Landscaping care",
       "price": "$90",
-      "desc": "cutting the grass at the burial site by hand; watering green spaces; plants’ partial renewal or planting (landscaping plants price is not included)"
+      "desc": "cutting the grass at the burial site by hand; watering green spaces; plants’ partial renewal or planting (landscaping plants price is not included"
     },
     "cutting": {
       "title": "Trees cutting",
@@ -81,7 +81,7 @@
       "desc": "installation and repair of granite structures; foundation pouring; laying tiles or paving stones"
     },
     "flowers": {
-      "title": "Flowers",
+      "title": "Laying flowers",
       "price": "$20",
       "desc": "laying fresh and artificial flowers, wreaths, lighting a candle"
     },
@@ -96,5 +96,5 @@
       "desc": "snow removal; decorating with coniferous branches"
     }
   },
-  "final_disco": "The cost of services may depend on various factors and is calculated individually for each case. When forming the price, the degree of pollution of the burial site, the amount of work and necessary additional services, as well as weather conditions and the time of year are usually evaluated. However, the final cost remains low, and to save your time and effort, it is much more profitable to contact specialists.\nThe price depends on the number of necessary extra services and additional factors, more accurate numbers can be found by calling the numbers on our website."
+  "final_disco": "The cost of services may depend on various factors and is calculated individually for each case. When forming the price, the degree of pollution of the burial site, the amount of work and necessary additional services, as well as weather conditions and the time of year are usually evaluated. However, the final cost remains low. To save your time and effort, it is much more profitable to contact us, the specialists. The price depends on the number of necessary extra services and additional factors, more accurate numbers can be found by calling the numbers on our website."
 }

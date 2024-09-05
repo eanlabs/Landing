@@ -21,7 +21,7 @@ import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
 
 function TopBar() {
-    const {t} = useTranslation('header');
+    const {t} = useTranslation('contacts');
 
     return (
         <div className="ct-topBar ct-topBar--small d-none d-md-block">
@@ -35,15 +35,21 @@ function TopBar() {
                     <div className="ct-u-displayTableCell ct-topBar-col2">
                         <div className="ct-contactBox">
                             <ul className="ct-contactBox-list list-unstyled list-inline">
-                                <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
-                                    <a href="https://wa.me/+972545732280"><i className="fa-brands fa-whatsapp fa-2x"></i></a>
+                                <li data-toggle="tooltip" data-placement="bottom" title="Call us"
+                                    className="active list-inline-item">
+                                    <a href="https://wa.me/+972545732280">
+                                        <i className="fa-brands fa-whatsapp fa-2x"></i>
+                                    </a>
                                 </li>
-                                <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
-                                    <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a>
-                                </li>
+                                <li data-toggle="tooltip" data-placement="bottom" title="Call us"
+                                    className="active list-inline-item">
+                                    <a href="tel:+972545732280">
+                                        <i className="fa fa-phone fa-2x"></i>
+                                    </a>
+                            </li>
                             </ul>
-                            <span className="ct-contactBox-content ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">
-                                +972 54-573-2280
+                            <span dir="ltr" className="ct-contactBox-content ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">
+                                {t('phone')}
                             </span>
                             <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
                                 {t('CallUs')}
@@ -58,8 +64,8 @@ function TopBar() {
                                     <a href="mailto:memorealy@gmail.com"><i className="fa fa-envelope fa-2x"></i></a>
                                 </li>
                             </ul>
-                            <span className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize24 ct-fs-i ct-u-colorMotive">
-                                memorealy@gmail.com
+                            <span  className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize24 ct-fs-i ct-u-colorMotive">
+                                {t('mail')}
                             </span>
                             <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
                                 {t('Respond')}

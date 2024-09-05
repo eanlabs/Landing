@@ -26,9 +26,10 @@ function Langs() {
         document.documentElement.lang = lang;
         if (lang !== 'he') {
             document.documentElement.dir = 'ltr';
+            document.body.classList.remove('rtl');
         } else {
-            //document.documentElement.dir = 'rtl';
-            //document.documentElement.className = "rtl";
+            document.documentElement.dir = 'rtl';
+            document.body.className = "rtl";
         }
         i18n.changeLanguage(lang);
     }
