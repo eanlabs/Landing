@@ -38,20 +38,26 @@ function Langs() {
     return (
         <ul className="list-inline list-unstyled text-center">
             <li key={0} className="list-inline-item">
-                <Button  type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'en')}>
-                    <Image src="assets/images/us.png" style={{ width: '50%' }}/>
-                </Button>
-            </li>
-
-            <li key={1} className="list-inline-item">
-                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'he')}>
-                    <Image src="assets/images/il.png" style={{ width: '50%' }}/>
+                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'en')}>
+                    <Image src="assets/images/us.png" style={{width: '50%'}}/>
                 </Button>
             </li>
 
             <li key={2} className="list-inline-item">
+                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'he')}>
+                    <Image src="assets/images/il.png" style={{width: '50%'}}/>
+                </Button>
+            </li>
+
+            <li key={1} className="list-inline-item">
+                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'ua')}>
+                    <Image src="assets/images/ua.png" style={{width: '50%'}}/>
+                </Button>
+            </li>
+
+            <li key={3} className="list-inline-item">
                 <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'ru')}>
-                    <Image src="assets/images/ru.png" style={{ width: '50%' }}/>
+                    <Image src="assets/images/ru.png" style={{width: '50%'}}/>
                 </Button>
             </li>
         </ul>

@@ -17,6 +17,7 @@
 
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import ToTop from "../ToTop/ToTop";
 
 function Footer() {
     const {t} = useTranslation('header');
@@ -60,12 +61,15 @@ function Footer() {
                             */}
                         </div>
                     </div>
+                    {/*
                     <a href="#" className="ct-scrollUpButton ct-scrollUpButton--Top ct-js-btnScrollUp">
                        <span className="ct-sectioButton--square">
                            <i className="fa fa-angle-double-up"></i>
                        </span>
                     </a>
+                    */}
                 </div>
+                <ToTop />
             </div>
         </footer>
     )

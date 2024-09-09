@@ -5250,8 +5250,11 @@ footer.ct-footer .ct-footerMiddle .ct-u-displayTableCell:nth-child(4) .ct-copyri
   display: none;
 }
 footer.ct-footer .ct-footerMiddle .ct-scrollUpButton {
+  /*
   position: absolute;
   left: 50%;
+  */
+  position: fixed;
   bottom: -24px;
   line-height: 19px;
   margin-left: -23px;
@@ -5283,6 +5286,7 @@ footer.ct-footer .ct-footerMiddle .ct-scrollUpButton .ct-sectioButton--square:ac
 }
 footer.ct-footer .ct-footerMiddle .ct-scrollUpButton.ct-scrollUpButton--Top {
   bottom: 30px;
+  right: 30px;
 }
 @media (max-width: 1200px) {
   footer.ct-footer .ct-footerMiddle .ct-col1 {
