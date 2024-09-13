@@ -11,5 +11,10 @@
     "right": "Check what services we offer"
   },
   "works": "Our Works",
-  "morebtn": "Learn more"
+  "morebtn": "Learn more",
+  "slider": {
+    "head0": "WE WILL HELP",
+    "head1": "FUNERAL SERVICES",
+    "text": "professional & affordable funeral services"
+  }
 }

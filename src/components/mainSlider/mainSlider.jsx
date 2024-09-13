@@ -19,10 +19,52 @@ import React from 'react';
 import Image from 'react-bootstrap/Image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import {Fade, Zoom} from "react-awesome-reveal";
+import { useTranslation } from 'react-i18next';
 import Caption from "./caption";
 
 
+const zoom = (duration, text, key) => {
+    return (
+        <Zoom duration={duration} key={key}>
+            <header className="h1 text-uppercase ct-u-colorWhite ct-fw-700 ">
+                {text}
+            </header>
+        </Zoom>
+    )
+}
+
+const fade = (duration, direction = '', isHeader = false, text, key) => {
+    return (
+        <Fade duration={duration} direction={direction} key={key}>
+            {isHeader ?
+                <header className="h1 text-uppercase ct-u-colorWhite ct-fw-700 animated" >
+                    {text}
+                </header>
+                :
+                <h5 className="ct-u-fontType2 ct-fs-i ct-u-colorMotive ct-u-marginTopMinus10 ct-u-paddingBottom15 ">
+                    {text}
+                </h5>
+            }
+        </Fade>
+    )
+}
+
+
 function MainSlider() {
+    const {t, i18n} = useTranslation('header');
+
+    const inner = {
+        0: [zoom(700, t('slider.head0'), 0), fade(900, 'up', false, t('slider.text'), 1)],
+        1: [fade(700, 'down', true, t('slider.head1'), 0), fade(900, 'up', false, t('slider.text'), 1)]
+    }
+
+    let dir = "ltr"
+    if(i18n.language === 'he')
+      dir = "rtl"
+
+
+
     return (
         <section className="ct-mainSlider ct-js-owl section" id="home" >
             <Swiper
@@ -31,15 +73,17 @@ function MainSlider() {
                 pagination={{ clickable: true }}
                 speed={400}
                 style={{ height: 800 }}
+                dir={dir}
+                key={i18n.language}
             >
-                <SwiperSlide key={0}>
+                <SwiperSlide >
                     <Image src='assets/images/content/slide1.jpg'/>
                 </SwiperSlide>
-                <SwiperSlide key={1}>
+                <SwiperSlide >
                     <Image src='assets/images/content/slide2.jpg'/>
                 </SwiperSlide>
 
-                <Caption />
+                <Caption inner={inner} />
             </Swiper>
         </section>
     );

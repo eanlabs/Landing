@@ -22,7 +22,6 @@ import { useTranslation } from 'react-i18next';
 function Seo() {
     const {t, i18n} = useTranslation('seo');
     const lang = i18n.language;
-    console.log(lang);
     let dir = "ltr";
     let boClass = '';
     if (lang === 'he') {

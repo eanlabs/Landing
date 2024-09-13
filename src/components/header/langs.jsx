@@ -22,8 +22,10 @@ import { useTranslation } from 'react-i18next';
 
 function Langs() {
     const { i18n } = useTranslation();
+
     const handleClick = (e, lang) => {
         document.documentElement.lang = lang;
+
         if (lang !== 'he') {
             document.documentElement.dir = 'ltr';
             document.body.classList.remove('rtl');
@@ -33,7 +35,6 @@ function Langs() {
         }
         i18n.changeLanguage(lang);
     }
-
 
     return (
         <ul className="list-inline list-unstyled text-center">
