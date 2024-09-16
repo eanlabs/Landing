@@ -21,6 +21,7 @@ import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
 
 function Langs() {
+    const isMobile = window.innerWidth < 767
     const { i18n } = useTranslation();
 
     const handleClick = (e, lang) => {
@@ -56,7 +57,7 @@ function Langs() {
                 </Button>
             </li>
 
-            <li key={3} className="list-inline-item">
+            <li key={3} className={(isMobile ? '' : 'list-inline-item')}>
                 <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'ru')}>
                     <Image src="assets/images/ru.png" style={{width: '50%'}}/>
                 </Button>

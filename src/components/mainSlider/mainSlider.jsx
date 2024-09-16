@@ -52,6 +52,7 @@ const fade = (duration, direction = '', isHeader = false, text, key) => {
 
 
 function MainSlider() {
+    const isMobile = window.innerWidth < 767
     const {t, i18n} = useTranslation('header');
 
     const inner = {
@@ -72,7 +73,7 @@ function MainSlider() {
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 speed={400}
-                style={{ height: 800 }}
+                //style={{ height: 800 }}
                 dir={dir}
                 key={i18n.language}
             >
@@ -83,7 +84,9 @@ function MainSlider() {
                     <Image src='assets/images/content/slide2.jpg'/>
                 </SwiperSlide>
 
-                <Caption inner={inner} />
+                {!isMobile &&
+                    <Caption inner={inner} />
+                }
             </Swiper>
         </section>
     );
