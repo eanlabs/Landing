@@ -21,7 +21,7 @@
 
 .swiper-pagination{
     position: absolute;
-    top: 60% !important;
+    top: 63% !important;
 }
 
 .swiper-pagination-bullet{
@@ -178,6 +178,10 @@
     width: 40%;
 }
 
+.ct-box {
+    padding: 23px;
+}
+
 .ct-topBar .ct-topBar-col2, .ct-topBar .ct-topBar-col3 {
     width: 30%;
 }
@@ -195,4 +199,11 @@
 .rtl .ct-contactBox .ct-contactBox-content,
 .rtl .ct-contactBox .ct-contactBox-info {
     float: right;
+}
+
+@media (max-width: 767px) {
+    .swiper-slide img{
+        height: 800px;
+        object-fit: cover;
+    }
 }

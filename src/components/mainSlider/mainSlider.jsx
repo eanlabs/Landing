@@ -84,9 +84,8 @@ function MainSlider() {
                     <Image src='assets/images/content/slide2.jpg'/>
                 </SwiperSlide>
 
-                {!isMobile &&
+
                     <Caption inner={inner} />
-                }
             </Swiper>
         </section>
     );
