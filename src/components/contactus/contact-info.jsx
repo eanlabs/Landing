@@ -35,17 +35,25 @@ function ContactInfo() {
                 <Col lg={{span: 6, offset: 2}} md={6} sm={6}>
                     <div className="ct-contactBox  ct-u-paddingTop50">
                         <ul className="ct-contactBox-list ct-contactBox-list--smallPadding list-unstyled list-inline">
-                            <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
+                            <li data-toggle="tooltip" data-placement="bottom" title="Call us"
+                                className="active list-inline-item">
                                 <a href="https://wa.me/+972545732280">
                                     <i className="fa-brands fa-whatsapp fa-2x"></i>
                                 </a>
                             </li>
-                            <li data-toggle="tooltip" data-placement="bottom" title="Call us" className="active list-inline-item">
+                            <li data-toggle="tooltip" data-placement="bottom" title="Call us"
+                                className="active list-inline-item">
                                 <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a>
                             </li>
                         </ul>
                         <span dir="ltr"
-                            className="ct-contactBox-content ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive ">{t('phone')}</span>
+                              className="ct-cont ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive ">
+                            {t('phone')}
+                        </span>
+                        <span dir="ltr"
+                              className="ct-cont ct-u-displayBlock ct-u-fontType2 ct-u-fontSize30 ct-u-colorMotive ">
+                            {t('phoneua')}
+                        </span>
                     </div>
                 </Col>
                 {/*

@@ -5258,6 +5258,7 @@ footer.ct-footer .ct-footerMiddle .ct-scrollUpButton {
   bottom: -24px;
   line-height: 19px;
   margin-left: -23px;
+  z-index: 3080;
 }
 footer.ct-footer .ct-footerMiddle .ct-scrollUpButton .ct-sectioButton--square {
   -webkit-transition: all 0.3s ease;

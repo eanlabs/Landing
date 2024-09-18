@@ -46,10 +46,15 @@ function TopBar() {
                                     <a href="tel:+972545732280">
                                         <i className="fa fa-phone fa-2x"></i>
                                     </a>
-                            </li>
+                                </li>
                             </ul>
-                            <span dir="ltr" className="ct-contactBox-content ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">
+                            <span dir="ltr"
+                                  className="ct-cont ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">
                                 {t('phone')}
+                            </span>
+                            <span dir="ltr"
+                                  className="ct-cont ct-u-colorMotive ct-u-displayBlock ct-fs-i ct-u-fontSize24 ct-u-fontType2">
+                                {t('phoneua')}
                             </span>
                             <span className="ct-contactBox-info ct-fw-800 ct-fs-i ct-u-colorWhite ct-u-displayBlock ">
                                 {t('CallUs')}
