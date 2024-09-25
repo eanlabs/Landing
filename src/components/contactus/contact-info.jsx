@@ -37,13 +37,21 @@ function ContactInfo() {
                         <ul className="ct-contactBox-list ct-contactBox-list--smallPadding list-unstyled list-inline">
                             <li data-toggle="tooltip" data-placement="bottom" title="Call us"
                                 className="active list-inline-item">
+                                {/*
                                 <a href="https://wa.me/+972545732280">
                                     <i className="fa-brands fa-whatsapp fa-2x"></i>
                                 </a>
+                                */}
+                                <span>
+                                    <i className="fa-brands fa-whatsapp fa-2x"></i>
+                                </span>
                             </li>
                             <li data-toggle="tooltip" data-placement="bottom" title="Call us"
                                 className="active list-inline-item">
-                                <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a>
+                                {/* <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a> */}
+                                <span>
+                                    <i className="fa fa-phone fa-2x"></i>
+                                </span>
                             </li>
                         </ul>
                         <span dir="ltr"

@@ -16,12 +16,12 @@
  */
 
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
 
 function Langs() {
-    const isMobile = window.innerWidth < 767
+    //const isMobile = window.innerWidth < 767
     const { i18n } = useTranslation();
 
     const handleClick = (e, lang) => {
@@ -38,31 +38,48 @@ function Langs() {
     }
 
     return (
-        <ul className="list-inline list-unstyled text-center">
-            <li key={0} className="list-inline-item">
-                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'en')}>
+        <Nav as="ul" className="align-items-center">
+            <Nav.Item as="li">
+                <Nav.Link
+                    as="button"
+                    eventKey="en"
+                    className="btn btn-primary"
+                    onClick={(e) => handleClick(e, 'en')}
+                >
                     <Image src="assets/images/us.png" style={{width: '50%'}}/>
-                </Button>
-            </li>
-
-            <li key={2} className="list-inline-item">
-                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'he')}>
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+                <Nav.Link
+                    as="button"
+                    eventKey="he"
+                    className="btn btn-primary"
+                    onClick={(e) => handleClick(e, 'he')}
+                >
                     <Image src="assets/images/il.png" style={{width: '50%'}}/>
-                </Button>
-            </li>
-
-            <li key={1} className="list-inline-item">
-                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'ua')}>
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+                <Nav.Link
+                    as="button"
+                    eventKey="ua"
+                    className="btn btn-primary"
+                    onClick={(e) => handleClick(e, 'ua')}
+                >
                     <Image src="assets/images/ua.png" style={{width: '50%'}}/>
-                </Button>
-            </li>
-
-            <li key={3} className={(isMobile ? '' : 'list-inline-item')}>
-                <Button type="button" bsPrefix="btn" variant="primary" onClick={(e) => handleClick(e, 'ru')}>
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item as="li" >
+                <Nav.Link
+                    as="button"
+                    eventKey="ru"
+                    className="btn btn-primary"
+                    onClick={(e) => handleClick(e, 'ru')}
+                >
                     <Image src="assets/images/ru.png" style={{width: '50%'}}/>
-                </Button>
-            </li>
-        </ul>
+                </Nav.Link>
+            </Nav.Item>
+        </Nav>
     );
 }
 

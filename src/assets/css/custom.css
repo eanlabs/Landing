@@ -21,7 +21,7 @@
 
 .swiper-pagination{
     position: absolute;
-    top: 63% !important;
+    top: 52% !important;
 }
 
 .swiper-pagination-bullet{
@@ -201,9 +201,54 @@
     float: right;
 }
 
+/***************************************************/
+
+
+.ct-contactBox ul.ct-contactBox-list li span {
+    display: block;
+    width: 55px;
+    height: 55px;
+    color: #5f5f5f;
+    background-color: transparent;
+    border: 2px solid #5f5f5f;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 51px;
+}
+.ct-contactBox ul.ct-contactBox-list li span i {
+    color: #5f5f5f;
+    font-size: 30px;
+    line-height: inherit;
+}
+.ct-contactBox ul.ct-contactBox-list li span:hover,
+.ct-contactBox ul.ct-contactBox-list li span:active,
+.ct-contactBox ul.ct-contactBox-list li span:focus {
+    border-color: #fff;
+}
+.ct-contactBox ul.ct-contactBox-list li span:hover i,
+.ct-contactBox ul.ct-contactBox-list li span:active i,
+.ct-contactBox ul.ct-contactBox-list li span:focus i {
+    color: #fff;
+}
+.ct-contactBox ul.ct-contactBox-list li.active span {
+    color: #fff;
+    border-color: #fff;
+}
+.ct-contactBox ul.ct-contactBox-list li.active span i {
+    color: #fff;
+}
+
+/***************************************************/
+
 @media (max-width: 767px) {
     .swiper-slide img{
         height: 800px;
         object-fit: cover;
+    }
+
+    .fa-ul{
+        width: 85%;
     }
 }

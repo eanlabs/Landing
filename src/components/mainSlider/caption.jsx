@@ -50,7 +50,7 @@ function Caption(props) {
                         <div className="ct-box">
                             <div className="ct-box-inner text-center">
                                 {showCaption}
-                            <a href="#" className="btn btn-default">{t('morebtn')}</a>
+                                {/* <a href="#" className="btn btn-default">{t('morebtn')}</a> */}
                             </div>
                         </div>
                     </Col>
