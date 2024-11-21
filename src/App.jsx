@@ -20,14 +20,15 @@ import Seo from "./components/seo/seo";
 import Loader from './components/loader/loader';
 import Header from './components/header';
 import MainSlider from './components/mainSlider/mainSlider';
-import IconBox from './components/iconBox/iconbox';
+//import IconBox from './components/iconBox/iconbox';
 import Works from "./components/works";
 import About from './components/about/about';
 import Services from './components/services';
-import Testimonials from './components/testimonials/testimonials';
+//import Testimonials from './components/testimonials/testimonials';
 import Obituaries from './components/obituaries';
 import ContactUs from './components/contactus';
-import Footer from './components/footer/footer';
+//import Footer from './components/footer/footer';
+import Improvement from "./components/Improve";
 
 function App() {
     return (
@@ -38,13 +39,16 @@ function App() {
                 <div id="ct-js-wrapper" className="ct-pageWrapper">
                     <Header />
                     <MainSlider />
+                    {/*
                     <IconBox />
-                    <Works />
+                    <Footer />
+                    */}
                     <About />
                     <Services />
-                    <Obituaries />
                     <ContactUs />
-                    <Footer />
+                    <Obituaries />
+                    <Improvement />
+                    <Works />
                 </div>
             </>
         </Suspense>

@@ -69,20 +69,22 @@ function MainSlider() {
     return (
         <section className="ct-mainSlider ct-js-owl section" id="home" >
             <Swiper
-                modules={[Pagination]}
+                //modules={[Pagination]}
                 slidesPerView={1}
-                pagination={{ clickable: true }}
+                //pagination={{ clickable: true }}
                 speed={400}
                 //style={{ height: 800 }}
                 dir={dir}
                 key={i18n.language}
             >
                 <SwiperSlide >
-                    <Image src='assets/images/content/slide1.jpg'/>
+                    <Image className="w-100" src='assets/images/content/slide1.png'/>
                 </SwiperSlide>
+                {/*
                 <SwiperSlide >
                     <Image src='assets/images/content/slide2.jpg'/>
                 </SwiperSlide>
+                */}
 
 
                     <Caption inner={inner} />

@@ -19,14 +19,15 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import ContactForm from "./contact-form";
 import ContactInfo from "./contact-info";
+import Row from "react-bootstrap/Row";
 
 function ContactUs() {
     return(
-        <section className="ct-contactSection ct-u-backgroundBlack ct-u-paddingTop90 ct-u-paddingBottom95 section" id="contact">
-            <Container>
+        <section className="ct-contactSection ct-u-backgroundBlack ct-u-paddingTop90 section" id="contact">
+            <Row>
                 <ContactInfo />
                 <ContactForm />
-            </Container>
+            </Row>
         </section>
     )
 

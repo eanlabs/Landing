@@ -22,7 +22,7 @@ import NavBar from "./NavBar";
 function Header() {
     return(
         <>
-            <TopBar />
+            {/*<TopBar />*/}
             <NavBar />
         </>
     )

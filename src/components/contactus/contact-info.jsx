@@ -19,12 +19,14 @@ import React from "react";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useTranslation } from 'react-i18next';
+import Image from "react-bootstrap/Image";
 
 function ContactInfo() {
     const {t} = useTranslation('contacts');
 
     return(
         <>
+            {/*
             <Row className="text-center">
                 <Col md={12}>
                     <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('title')}</h3>
@@ -41,14 +43,14 @@ function ContactInfo() {
                                 <a href="https://wa.me/+972545732280">
                                     <i className="fa-brands fa-whatsapp fa-2x"></i>
                                 </a>
-                                */}
+                                /}
                                 <span>
                                     <i className="fa-brands fa-whatsapp fa-2x"></i>
                                 </span>
                             </li>
                             <li data-toggle="tooltip" data-placement="bottom" title="Call us"
                                 className="active list-inline-item">
-                                {/* <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a> */}
+                                {/* <a href="tel:+972545732280"><i className="fa fa-phone fa-2x"></i></a> /}
                                 <span>
                                     <i className="fa fa-phone fa-2x"></i>
                                 </span>
@@ -77,9 +79,8 @@ function ContactInfo() {
                         </span>
                     </div>
                 </Col>
-                */}
+                /}
             </Row>
-
             <Row>
                 <Col lg={{span: 6, offset: 2}} md={8} sm={12}>
                     <div className="ct-contactBox ct-u-paddingTop50">
@@ -95,7 +96,13 @@ function ContactInfo() {
                     </div>
                 </Col>
             </Row>
-
+            */}
+            <Col md={6} className="contact-face-position" style={{zIndex: 500}}>
+                <h3 className="ct-fw-700 ct-u-colorWhite text-center ct-u-paddingBottom20">{t('title')}</h3>
+                <div className="contact-face-bg">
+                    <Image className="contact-face" fluid src="assets/images/content/contact_face.jpg" />
+                </div>
+            </Col>
         </>
     )
 }

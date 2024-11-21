@@ -21,7 +21,7 @@ import Gallery from "./gallery";
 
 function Works() {
     return (
-        <section className="ct-aboutSection ct-u-traingleFigure  section" id="ourworks">
+        <section className=" section" id="ourworks">
             <Title />
             <Gallery />
         </section>

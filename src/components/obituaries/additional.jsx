@@ -19,12 +19,44 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useTranslation } from "react-i18next";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+import {Table} from "react-bootstrap";
 
 function Additional() {
     const {t} = useTranslation('price');
 
     return (
         <>
+            <Row>
+                <Col md={5} className="price-face-position" >
+                    <div className="contact-face-bg">
+                        <Image className="contact-face" fluid src="assets/images/content/pay_cond.jpg" />
+                    </div>
+                </Col>
+                <Col md={7} className="pe-5">
+                    <h2 className="ct-fw-700 ct-u-colorWhite">{t('pay_cond')}</h2>
+                    <ol className="ct-u-fontSize24 ct-u-colorWhite">
+                        <li>{t('pay_cond_desc.l0')}</li>
+                        <li>{t('pay_cond_desc.l1')}</li>
+                        <li>{t('pay_cond_desc.l2')}</li>
+                        <li>{t('pay_cond_desc.l3')}</li>
+                    </ol>
+                    <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('pay_cond_desc.long_desc')}</p>
+                </Col>
+            </Row>
+            <Row className="ct-u-paddingTop70">
+                <Col md={5} className="ct-u-paddingLR40">
+                    <h2 className="ct-fw-700 ct-u-colorWhite">{t('onetime_work.title')}</h2>
+                    <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite ct-u-paddingAll60">{t('onetime_work.desc')}</p>
+                </Col>
+                <Col md={7} className="" >
+                    <Image className="" fluid src="assets/images/content/one_time.jpg" />
+                </Col>
+            </Row>
+
+
+            {/*
         <Row className="text-center ct-u-paddingTop70 ct-u-paddingBottom30">
             <Col md={12}>
                 <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('Additional.title')}</h3>
@@ -200,13 +232,11 @@ function Additional() {
                     </div>
                 </div>
             </Col>
-
-
                 <p className="ct-u-fontSize24 ct-u-colorWhite ct-u-lineHeight36">
                     {t('final_disco')}
                 </p>
-
         </Row>
+        */}
         </>
     );
 }

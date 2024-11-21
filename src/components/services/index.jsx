@@ -28,16 +28,16 @@ function Services() {
             //data-background="assets/images/content/media-section-photo1.jpg"
             //data-background-mobile="assets/images/content/media-section-photo1.jpg"
             //data-stellar-background-ratio="0.3"
-            style={{
-                backgroundImage: `url("assets/images/content/media-section-photo1.jpg")`,
-                minHeight:840
-            }}
+            //style={{
+            //    backgroundImage: `url("assets/images/content/media-section-photo1.jpg")`,
+            //    minHeight:840
+            //}}
         >
             <div className="ct-mediaSection-inner">
                 <Container>
                     <Title />
-                    <Carts />
                 </Container>
+                <Carts />
             </div>
         </section>
 );

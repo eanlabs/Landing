@@ -24,10 +24,14 @@ import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
-    const {t} = useTranslation('contacts');
+    const {t, i18n} = useTranslation('contacts');
     const [validated, setValidated] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
+    const lang = i18n.language;
+    let il = false;
+    if (lang === 'he')
+        il = !il;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -62,72 +66,83 @@ function ContactForm() {
     };
 
     return(
-        <Row>
-            <Col md={{span: 6, offset: 3}} className="text-center ct-u-paddingTop80">
-                <Form noValidate validated={validated} onSubmit={handleSubmit} data-bs-theme="dark">
-                    <Row>
-                        <Col md={12}>
-                            <Form.Group controlId="formGroupName" className="form-group">
-                                <Form.Control required placeholder={t('form.name')} name="user_name" className="ct-fs-i"/>
-                                <Form.Control.Feedback type="invalid" tooltip>
-                                    {t('form.tooltip')}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                        </Col>
-                        <Col md={12}>
-                            <Form.Group controlId="formGroupPhone" className="form-group">
-                                <Form.Control required type="phone" placeholder={t('form.phone')} name="user_phone"
-                                              className="ct-fs-i"/>
-                                <Form.Control.Feedback type="invalid" tooltip>
-                                    {t('form.tooltip')}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                        </Col>
-                        <Col md={12}>
-                            <Form.Group controlId="formGroupEmail" className="form-group">
-                                <Form.Control required type="email" placeholder={t('form.mail')} name="user_email"
-                                              className="ct-fs-i"/>
-                                <Form.Control.Feedback type="invalid" tooltip>
-                                    {t('form.tooltip')}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                        </Col>
-                        <Col md={12}>
-                            <Form.Group controlId="formGroupMassage" className="form-group">
-                                <Form.Control required placeholder={t('form.todo')} name="message1"
-                                              className="ct-fs-i"/>
-                                <Form.Control.Feedback type="invalid" tooltip>
-                                    {t('form.tooltip')}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                        </Col>
-                        <Col md={12}>
-                            <Form.Group controlId="formGroupMassageContinue" className="form-group">
-                                <Form.Control name="message2" className="ct-fs-i"/>
-                            </Form.Group>
-                        </Col>
-                        <Col md={12} className="text-center">
-                            <Button bsPrefix="btn" variant="default" type="submit">{t('form.send')}</Button>
-                        </Col>
-                    </Row>
-                </Form>
+        <Col md={4} className="text-center contact-form">
+            {il ?
+                <p className="h5 ct-u-colorWhite ct-fw-700">
+                    {t("appName")} {t("inIL")} {t("phone")}
+                </p>
+            :
+                <p className="h5 ct-u-colorWhite ct-fw-700">
+                    {t("appName")} {t("inUA")} {t("phoneua")}
+                </p>
+            }
+            <p className="h5 text-center ct-u-paddingBottom15 ct-u-colorWhite ct-fw-700">{t("mail")}</p>
+            <Form noValidate validated={validated} onSubmit={handleSubmit} data-bs-theme="dark">
+                <Row>
+                    <Col md={12}>
+                        <Form.Group controlId="formGroupName" className="form-group">
+                            <Form.Control required placeholder={t('form.name')} name="user_name" className=""/>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {t('form.tooltip')}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Col>
+                    <Col md={12}>
+                        <Form.Group controlId="formGroupPhone" className="form-group">
+                            <Form.Control required type="phone" placeholder={t('form.phone')} name="user_phone"
+                                          className=""/>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {t('form.tooltip')}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Col>
+                    <Col md={12}>
+                        <Form.Group controlId="formGroupEmail" className="form-group">
+                            <Form.Control required type="email" placeholder={t('form.mail')} name="user_email"
+                                          className=""/>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {t('form.tooltip')}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Col>
+                    <Col md={12}>
+                        <Form.Group controlId="formGroupMassage" className="form-group">
+                            <Form.Control required placeholder={t('form.todo')} name="message1"
+                                          className=""/>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {t('form.tooltip')}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Col>
+                    <Col md={12}>
+                        <Form.Group controlId="formGroupMassageContinue" className="form-group">
+                            <Form.Control name="message2" className=""/>
+                        </Form.Group>
+                    </Col>
+                    <Col md={12} className="text-center">
+                        <Button className="rounded-pill" bsPrefix="btn" variant="light" type="submit">{t('form.send')}</Button>
+                    </Col>
+                </Row>
+            </Form>
 
-                {success && (
+            {success && (
                 <div className="successMessage alert alert-success ct-frame ct-u-marginTop30">
-                    <Button type="button" bsPrefix="close" aria-hidden={true} onClick={() => {setSuccess(false)}}>x</Button>
+                    <Button type="button" bsPrefix="close" aria-hidden={true} onClick={() => {
+                        setSuccess(false)
+                    }}>x</Button>
                     {t('form.success')}
                 </div>)
-                }
+            }
 
-                {error && (
+            {error && (
                 <div className="errorMessage alert alert-danger ct-frame ct-u-marginTop30">
-                    <Button type="button" bsPrefix="close" aria-hidden={true} onClick={() => {setError(false)}}>x</Button>
+                    <Button type="button" bsPrefix="close" aria-hidden={true} onClick={() => {
+                        setError(false)
+                    }}>x</Button>
                     {t('form.error')}
                 </div>)
-                }
-
-            </Col>
-        </Row>
+            }
+        </Col>
     )
 }
 

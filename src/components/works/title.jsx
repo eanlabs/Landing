@@ -19,17 +19,19 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useTranslation } from 'react-i18next';
+import Image from "react-bootstrap/Image";
 
 function Title() {
-    const {t} = useTranslation('header');
+    const {t} = useTranslation('works');
 
     return (
-        <Row className="text-center ct-u-paddingTop70 ct-u-paddingBottom30">
-            <Col md={12}>
-                <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('works')}</h3>
-                <span className="ct-iconDivider ct-iconDivider--dark ct-iconDivider--withOpacity">
-                    <i className="fa fa-leaf fa-2x"></i>
-                </span>
+        <Row className="ct-u-backgroundBlack">
+            <Col md={5} className="" >
+                <Image className="" fluid src="assets/images/content/our_works.jpg" />
+            </Col>
+            <Col md={7} className="">
+                <h3 className="ct-fw-700 ct-u-colorWhite">{t('our_works_title')}</h3>
+                <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('our_works_descr')}</p>
             </Col>
         </Row>
     );

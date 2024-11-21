@@ -24,12 +24,17 @@ function Title() {
     const {t} = useTranslation('price');
 
     return(
-        <Row className="text-center ct-u-paddingTop70 ct-u-paddingBottom30">
-            <Col md={12}>
-                <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('Title')}</h3>
+        <Row className="ct-u-paddingTop70 ct-u-paddingBottom30 ">
+            <Col md={4}>
+                <h2 className="ct-fw-700 ct-u-colorWhite">{t('Title')}</h2>
+                {/*
                 <span className="ct-iconDivider ct-iconDivider--dark ct-iconDivider--withOpacity">
                     <i className="fa fa-leaf fa-2x"></i>
                 </span>
+                */}
+            </Col>
+            <Col md={8}>
+                <p className="ct-u-fontSize24 ct-u-colorWhite ct-u-lineHeight30">{t('rightTxt')}</p>
             </Col>
         </Row>
     )

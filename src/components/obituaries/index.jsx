@@ -18,13 +18,22 @@
 import React from "react";
 import Title from "./title";
 import Gallery from "./gallery";
+import Container from "react-bootstrap/Container";
+import Tables from "./Tables";
 
 function Obituaries() {
     return(
-        <section className="container-fluid ct-u-backgroundDark section" id="obituaries">
-            <Title />
+        <>
+        <section className="container-fluid ct-u-backgroundBlack section" id="obituaries">
+            <Container className="">
+                <Title />
+            </Container>
             <Gallery />
         </section>
+        <section className="container-fluid ct-u-backgroundWhite  section" id="tables">
+            <Tables />
+        </section>
+        </>
     )
 }
 

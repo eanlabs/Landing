@@ -38,45 +38,45 @@ function Langs() {
     }
 
     return (
-        <Nav as="ul" className="align-items-center">
+        <Nav as="ul" className="align-items-center flex-row">
             <Nav.Item as="li">
                 <Nav.Link
                     as="button"
                     eventKey="en"
-                    className="btn btn-primary"
+                    className="btn btn-outline-default"
                     onClick={(e) => handleClick(e, 'en')}
                 >
-                    <Image src="assets/images/us.png" style={{width: '50%'}}/>
+                    <Image fluid src="assets/images/us.png"/>
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
                 <Nav.Link
                     as="button"
                     eventKey="he"
-                    className="btn btn-primary"
+                    className="btn btn-outline-default"
                     onClick={(e) => handleClick(e, 'he')}
                 >
-                    <Image src="assets/images/il.png" style={{width: '50%'}}/>
+                    <Image fluid src="assets/images/il.png" />
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
                 <Nav.Link
                     as="button"
                     eventKey="ua"
-                    className="btn btn-primary"
+                    className="btn btn-outline-default"
                     onClick={(e) => handleClick(e, 'ua')}
                 >
-                    <Image src="assets/images/ua.png" style={{width: '50%'}}/>
+                    <Image fluid src="assets/images/ua.png" />
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li" >
                 <Nav.Link
                     as="button"
                     eventKey="ru"
-                    className="btn btn-primary"
+                    className="btn btn-outline-default"
                     onClick={(e) => handleClick(e, 'ru')}
                 >
-                    <Image src="assets/images/ru.png" style={{width: '50%'}}/>
+                    <Image fluid src="assets/images/ru.png" />
                 </Nav.Link>
             </Nav.Item>
         </Nav>
