@@ -549,3 +549,7 @@ body{
 table.table tbody tr td{
     padding: 5px;
 }
+
+.table-responsive{
+    padding: 0 3rem;
+}
