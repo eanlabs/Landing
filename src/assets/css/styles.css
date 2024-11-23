@@ -9104,7 +9104,7 @@ html.ie8 .ct-headroom--fixedMenu nav.navbar.navbar-scroll-top {
     max-height: 450px;
   }
   .ct-mainSlider {
-    max-height: 500px;
+    /*max-height: 500px;*/
   }
   .ct-box .ct-box-inner {
     padding-top: 10px;
