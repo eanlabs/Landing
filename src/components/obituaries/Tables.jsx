@@ -27,7 +27,7 @@ function Tables() {
     return (
         <Container>
             <Row className="ct-u-backgroundWhite ct-u-paddingAll60 mx-auto">
-                <Table bordered hover variant="light" className="ct-fw-700">
+                <Table responsive bordered hover variant="light" className="ct-fw-700">
                     <thead className="text-center  ct-u-fontSize14 text-capitalize">
                         <tr>
                             <th>{t('Table.head0')}</th>
