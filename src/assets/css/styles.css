@@ -6057,7 +6057,7 @@ fieldset[disabled] .form-group .form-control::-:-ms-input-placeholder {
   color: #d1d1d1;
 }
 .ct-mainSlider {
-  background-size: cover;
+  /*background-size: cover;*/
 }
 @media (max-width: 1600px) {
   .ct-blockquoteBox .ct-blockquote p {
