@@ -26,12 +26,15 @@ function Title() {
 
     return (
         <Row className="ct-u-backgroundBlack">
-            <Col md={5} className="" >
+            <Col md={6} className="" >
                 <Image className="" fluid src="assets/images/content/our_works.jpg" />
             </Col>
-            <Col md={7} className="">
+            <Col md={6} className="">
                 <h3 className="ct-fw-700 ct-u-colorWhite">{t('our_works_title')}</h3>
-                <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('our_works_descr')}</p>
+                <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('our_works_descr_p0')}</p>
+                <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('our_works_descr_p1')}</p>
+                <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('our_works_descr_p2')}</p>
+                <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('our_works_descr_p3')}</p>
             </Col>
         </Row>
     );

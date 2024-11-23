@@ -27,40 +27,20 @@ function About() {
     return (
         <section className="ct-aboutSection ct-u-backgroundBlack section" id="about-us">
             <Container>
-                <Row className="ct-u-paddingBottom100 ct-u-paddingTop60">
-                    {/*
-                    <Col md={12} className="text-center">
-                        <h3 className="text-uppercase ct-fw-700 ct-u-colorWhite">{t('Title')}</h3>
-                        <span className="ct-iconDivider ct-iconDivider--dark ct-iconDivider--withOpacity">
-                            <i className="fa fa-leaf fa-2x"></i>
-                        </span>
-                    </Col>
-                    */}
+                <Row className="">
                     <Col md={6} sm={6} className="ct-aboutSection-imageBox ct-u-paddingTop50">
-                        <h2 className="ct-fw-700 ct-u-colorWhite">{t('Title')}</h2>
+                        <h3 className="ct-fw-700 ct-u-colorWhite">{t('Title')}</h3>
                         {/*img src="assets/images/content/about-us.png" alt="Image"/> */}
                     </Col>
                     <Col md={6} sm={6} className="ct-aboutSection-descriptionBox ct-u-paddingTop50">
                         <p className="ct-u-fontSize24 ct-u-colorWhite ct-u-lineHeight30">
-                            {t('Body')}
+                            {t('Body_p0')}
                         </p>
-                        <br/>
-                        {/*
-                        <p className="ct-u-colorWhite ct-u-lineHeight30 ct-u-paddingBottom30">
-                            Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia
-                            in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
-                            Quisque semper justo at risus.
-                        </p>
-                        <ul className="ct-buttonList list-inline list-unstyled">
-                            <li className="list-inline-item">
-                                <a href="#" className="btn btn-default ">Learn More</a>
-                            </li>
-                            <li className="list-inline-item">
-                                <a href="#" className="btn btn-primary ct-btn--border">Testimonials</a>
-                            </li>
-                        </ul>
-                        */}
+                        <p className="ct-u-fontSize24 ct-u-colorWhite ct-u-lineHeight30">
+                            {t('Body_p1')}
+                        </p> <p className="ct-u-fontSize24 ct-u-colorWhite ct-u-lineHeight30">
+                        {t('Body_p2')}
+                    </p>
                     </Col>
                 </Row>
             </Container>

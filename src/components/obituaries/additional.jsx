@@ -34,7 +34,7 @@ function Additional() {
                         <Image className="contact-face" fluid src="assets/images/content/pay_cond.jpg" />
                     </div>
                 </Col>
-                <Col md={7} className="pe-5">
+                <Col md={7} className="pe-md-5">
                     <h2 className="ct-fw-700 ct-u-colorWhite">{t('pay_cond')}</h2>
                     <ol className="ct-u-fontSize24 ct-u-colorWhite">
                         <li>{t('pay_cond_desc.l0')}</li>
@@ -46,11 +46,11 @@ function Additional() {
                 </Col>
             </Row>
             <Row className="ct-u-paddingTop70">
-                <Col md={5} className="ct-u-paddingLR40">
+                <Col md={6} className="ct-u-paddingLR40">
                     <h2 className="ct-fw-700 ct-u-colorWhite">{t('onetime_work.title')}</h2>
                     <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite ct-u-paddingAll60">{t('onetime_work.desc')}</p>
                 </Col>
-                <Col md={7} className="" >
+                <Col md={6} className="" >
                     <Image className="" fluid src="assets/images/content/one_time.jpg" />
                 </Col>
             </Row>

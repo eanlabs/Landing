@@ -4148,9 +4148,11 @@ body.boxed .ct-pageWrapper,
 }
 @media (max-width: 767px) {
   .ct-pageWrapper {
+    /*
     overflow: hidden;
     position: relative;
     padding-top: 105px;
+    */
   }
 }
 .cssAnimate .animated {
@@ -7051,8 +7053,10 @@ img.mfp-img {
 }
 @media (max-width: 767px) {
   .ct-mediaSection-inner {
+    /*
     padding-top: 30px;
     padding-bottom: 30px;
+    */
   }
 }
 .ct-iconBoxes {

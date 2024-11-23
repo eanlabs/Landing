@@ -1,7 +1,8 @@
 :root{
     --bs-body-bg: #2f3b4b;
     --bs-body-font-family: Roboto;
-    --bs-border-width: 2px
+    --bs-border-width: 2px;
+    --bs-gutter-y: 1rem;
 }
 
 body{
@@ -272,7 +273,10 @@ body{
         width: 85%;
     }
 
-    .icon-texts,
+    .icon-texts{
+        margin: 0 auto;
+    }
+
     .price-cart{
         margin-left: 0!important;
     }
@@ -287,7 +291,24 @@ body{
 
     .ct-u-paddingAll60{
         padding: 20px 0!important;
+    }
 
+    .ct-fw-600,
+    .ct-fw-700{
+        font-weight: normal!important;
+    }
+
+    .h2,
+    h2 {
+        font-size: 40px;
+    }
+
+    .price-face-position{
+        margin-left: 0!important;
+    }
+
+    .ct-navbarMobile .navbar-brand{
+        padding: 0;
     }
 }
 
@@ -302,71 +323,88 @@ body{
 }
 
 .parallelogram {
-    width: 250px;
-    height: 270px;
-    transform: skew(-25deg);
-    background: var(--bs-body-bg);
+    width: 260px;
+    height: 280px;
+    /*transform: skew(-25deg);
+    background: var(--bs-body-bg);*/
+    background-image: linear-gradient(to right, #ae7c26 0%, #f1cc54 100%);
+    position: relative;
+    border-radius: 50%;
+    z-index: 5;
 }
 
-.parallelogram-bg1::before{
+
+.parallelogram::before{
+    content: '';
+    width: 250px;
+    height: 270px;
+    background: var(--bs-body-bg);
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+}
+
+
+.parallelogram-bg1::after{
     content:'';
     position:absolute;
     background-image:url("../images/icon_1.png");
     background-size:cover;
     background-position:center;
     transform-origin:inherit;
-    transform:skewX(25deg);
+    /* transform:skewX(25deg); */
     width: 100%;
     height: 100%;
 }
 
-.parallelogram-bg2::before{
+.parallelogram-bg2::after{
     content:'';
     position:absolute;
     background-image:url("../images/icon_2.png");
     background-size:cover;
     background-position:center;
     transform-origin:inherit;
-    transform:skewX(25deg);
+    /*transform:skewX(25deg);*/
     width: 100%;
     height: 100%;
 }
 
-.parallelogram-bg3::before{
+.parallelogram-bg3::after{
     content:'';
     position:absolute;
     background-image:url("../images/icon_3.png");
     background-size:cover;
     background-position:center;
     transform-origin:inherit;
-    transform:skewX(25deg);
+    /*transform:skewX(25deg);*/
     width: 100%;
     height: 100%;
 }
 
-.parallelogram-bg4::before{
+.parallelogram-bg4::after{
     content:'';
     position:absolute;
     background-image:url("../images/icon_4.png");
     background-size:cover;
     background-position:center;
     transform-origin:inherit;
-    transform:skewX(25deg);
+    /*transform:skewX(25deg);*/
     width: 100%;
     height: 100%;
 }
 
 .icon-texts{
-    width: 350px;
-    padding: 10px 70px;
-    margin-left: -90px;
+    width: 300px;
+    padding: 10px;
     text-align: center;
 }
 
 .ct-mediaSection .caption{
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 20%;
+    left: 0;
 }
 
 .ct-decorSection .caption{
@@ -428,11 +466,11 @@ body{
 }
 
 .price-img{
-    padding: 0;
+    /*padding: 0;*/
 }
 
 .price-cart{
-    margin-left: -14%;
+    /*margin-left: -14%;*/
 }
 
 .price-face-position{
@@ -506,4 +544,8 @@ body{
 .ct-scrollUpButton.ct-scrollUpButton--Top {
     bottom: 30px;
     right: 30px;
+}
+
+table.table tbody tr td{
+    padding: 8px;
 }

@@ -32,7 +32,7 @@ function Carts() {
     return (
         <>
             <Row className="ct-u-backgroundBlack">
-                <Col md={7} className="position-relative">
+                <Col md={6} className="position-relative">
                     <Image fluid style={{width: "100%"}} src="assets/images/content/contacts.png"/>
                     <div className="caption">
                         <div className="ct-box">
@@ -61,7 +61,7 @@ function Carts() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4} style={{padding: 20}}>
+                <Col md={6} style={{padding: 20}}>
                     <p className="ct-u-fontSize24 ct-u-lineHeight30 ct-u-colorWhite  ct-fw-600">
                         {t("rightTxt")}
                     </p>

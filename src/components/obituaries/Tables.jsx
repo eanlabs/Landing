@@ -31,19 +31,19 @@ function Tables() {
                     <thead className="text-center  ct-u-fontSize14 text-capitalize">
                         <tr>
                             <th>{t('Table.head0')}</th>
-                            <th>{t('Table.head1')}</th>
+                            <th style={{width: "10%"}}>{t('Table.head1')}</th>
                             <th>{t('Table.head2')}</th>
                         </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>{t('Table.work0')}</td>
-                        <td className="">{t('Table.1week')}</td>
+                        <td className="text-center">{t('Table.1week')}</td>
                         <td>{t('Table.price0')}</td>
                     </tr>
                     <tr>
                         <td>{t('Table.work1')}</td>
-                        <td rowSpan={5} className="align-middle">{t('Table.2week')}</td>
+                        <td rowSpan={5} className="align-middle text-center">{t('Table.2week')}</td>
                         <td>{t('Table.price1')}</td>
                     </tr>
                     <tr>
@@ -64,7 +64,7 @@ function Tables() {
                     </tr>
                     <tr>
                         <td>{t('Table.work6')}</td>
-                        <td rowSpan={5} className="align-middle">{t('Table.5mounth')}</td>
+                        <td rowSpan={5} className="align-middle text-center">{t('Table.5mounth')}</td>
                         <td>{t('Table.price6')}</td>
                     </tr>
                     <tr>

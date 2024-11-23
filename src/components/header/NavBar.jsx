@@ -45,17 +45,17 @@ function NavBar() {
             className="ct-navbarMobile ct-navbarMobile--inverse"
             data-bs-theme="dark"
             //sticky="top"
-            fixed="top"
+            //fixed="top"
             collapseOnSelect={true}
         >
             <Container fluid>
                 <Navbar.Brand href="/" className="" >
-                    <Image src="assets/images/logo.png" alt="Website Logo"/>
+                    <Image src="assets/images/logo.png" alt="Website Logo" height="70"/>
                 </Navbar.Brand>
 
                  <span>
                      <p className="text-center text-uppercase ct-fw-700"> {t('menu_name')}</p>
-                     <Navbar.Toggle aria-controls="offcanvasNavbar-expand-false" className="btn-lg"/>
+                     <Navbar.Toggle aria-controls="offcanvasNavbar-expand-false" className=""/>
                  </span>
                 <Navbar.Offcanvas
                     id="offcanvasNavbar-expand-false"
@@ -90,36 +90,36 @@ function NavBar() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
 
-                <Navbar.Text className="mx-auto">
+                <Navbar.Text className="mx-auto p-0">
                     {il ?
                         <span>
-                            <p className="h6 text-center ct-u-colorWhite ct-fw-700">
+                            <p className="h6 text-center ct-u-colorWhite m-0 ct-fw-700">
                                 {t("appName", {ns: 'contacts'})}
                                 {' '}
                                 {t("inIL", {ns: 'contacts'})}
                             </p>
-                            <p className="h6 text-center ct-u-colorWhite ct-fw-700">
+                            <p className="h6 text-center ct-u-colorWhite m-0 ct-fw-700">
                                 {t("phone", {ns: 'contacts'})}
                             </p>
                         </span>
                     :
                         <span>
-                            <p className="h6 text-center ct-u-colorWhite ct-fw-700">
+                            <p className="h6 text-center ct-u-colorWhite m-0 ct-fw-700">
                                 {t("appName", {ns: 'contacts'})}
                                 {' '}
                                 {t("inUA", {ns: 'contacts'})}
                             </p>
-                            <p className="h6 text-center ct-u-colorWhite ct-fw-700">
+                            <p className="h6 text-center ct-u-colorWhite m-0 ct-fw-700">
                                 {t("phoneua", {ns: 'contacts'})}
                             </p>
                         </span>
                 }
-                    <p className="h6 text-center ct-u-paddingBottom15 ct-u-colorWhite ct-fw-700">{t("mail", {ns: 'contacts'})}</p>
+                    <p className="h6 text-center ct-u-colorWhite m-0 ct-fw-700">{t("mail", {ns: 'contacts'})}</p>
                 </Navbar.Text>
                 {!isMobile && <Langs/>}
                 {!isMobile &&
-                <Navbar.Text className="mx-auto">
-                    <p className="h6 text-center ct-u-paddingBottom15 ct-u-colorWhite ct-fw-700">
+                <Navbar.Text className="mx-auto p-0">
+                    <p className="h6 text-center ct-u-colorWhite m-0 ct-fw-700">
                         {t('info.right0')}
                         <br />
                         {t('info.right1')}

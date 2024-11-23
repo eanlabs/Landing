@@ -26,42 +26,40 @@ function Engraving() {
 
     return (
         <>
-        <Row className="ct-u-backgroundBlack p-5 ">
+        <Row className="ct-u-backgroundBlack p-4 p-md-5">
             <h3 className="ct-fw-700 ct-u-colorWhite text-center pb-5">{t('engraving_titleIL')}</h3>
-            <Col md={4} className="position-relative">
+            <Col md={4} className="position-relative mb-3">
                 <Image className="engraving-bg" fluid src="assets/images/content/engraving1.png"/>
                 <div className="caption top-0">
                      <p className="h5 ct-u-colorBlack ">{t("david_star")}</p>
                 </div>
             </Col>
-            <Col md={4} className="position-relative">
+            <Col md={4} className="position-relative mb-3">
                 <Image className="engraving-bg" fluid src="assets/images/content/engraving2.png"/>
                 <div className="caption top-0">
                     <p className="h5 ct-u-colorBlack ">{t("heaven_gate")}</p>
                 </div>
             </Col>
-            <Col md={4} className="position-relative">
+            <Col md={4} className="position-relative mb-3">
                 <Image className="engraving-bg" fluid src="assets/images/content/engraving3.png"/>
                 <div className="caption top-0">
                     <p className="h5 ct-u-colorBlack ">{t("hearth")}</p>
                 </div>
             </Col>
-            <Row className="p-md-5">
-                <Col md={2}></Col>
+            <Col md={2}></Col>
 
-                <Col md={4} className="position-relative">
-                    <Image className="engraving-bg" fluid src="assets/images/content/engraving4.png"/>
-                    <div className="caption top-0" style={{left: "unset", right: 0, width: "60%" }}>
-                        <p className="h5 ct-u-colorBlack ">{t("menora")}</p>
-                    </div>
-                </Col>
-                <Col md={4} className="position-relative">
-                    <Image className="engraving-bg" fluid src="assets/images/content/engraving5.png"/>
-                    <div className="caption bottom-0" style={{top: "unset"}}>
-                        <p className="h5 ct-u-colorBlack ">{t("flowers")}</p>
-                    </div>
-                </Col>
-            </Row>
+            <Col md={4} className="position-relative mb-3">
+                <Image className="engraving-bg" fluid src="assets/images/content/engraving4.png"/>
+                <div className="caption top-0" style={{left: "unset", right: 0, width: "60%" }}>
+                    <p className="h5 ct-u-colorBlack ">{t("menora")}</p>
+                </div>
+            </Col>
+            <Col md={4} className="position-relative mb-3">
+                <Image className="engraving-bg" fluid src="assets/images/content/engraving5.png"/>
+                <div className="caption bottom-0" style={{top: "unset"}}>
+                    <p className="h5 ct-u-colorBlack ">{t("flowers")}</p>
+                </div>
+            </Col>
         </Row>
 
         <Row className="ct-u-backgroundWhite p-5 ">

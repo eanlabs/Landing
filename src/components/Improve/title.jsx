@@ -20,6 +20,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import { useTranslation } from "react-i18next";
+import Container from "react-bootstrap/Container";
 
 function Title() {
     const {t} = useTranslation('improve');
@@ -38,7 +39,8 @@ function Title() {
                     <li>{t('titles.block1.list.l2')}</li>
                     <li>{t('titles.block1.list.l3')}</li>
                 </ul>
-
+            </Col>
+            <Col className="p-3">
                 <p className=" ct-u-fontSize24 ct-fw-700 ct-u-colorWhite">{t('titles.block2.desc')}</p>
                 <ul className="ct-u-fontSize24 ct-u-colorWhite">
                     <li>{t('titles.block2.list.l0')}</li>
