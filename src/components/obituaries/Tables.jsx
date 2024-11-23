@@ -25,8 +25,8 @@ function Tables() {
     const {t} = useTranslation('price');
 
     return (
-        <Container>
-            <Row className="ct-u-backgroundWhite ct-u-paddingAll60 mx-auto">
+
+            <div className="ct-u-backgroundWhite ct-u-paddingAll60">
                 <Table responsive bordered hover variant="light" className="ct-fw-700">
                     <thead className="text-center  ct-u-fontSize14 text-capitalize">
                         <tr>
@@ -86,8 +86,7 @@ function Tables() {
 
                     </tbody>
                 </Table>
-            </Row>
-        </Container>
+            </div>
     );
 }
 
