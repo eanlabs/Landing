@@ -27,8 +27,8 @@ function About() {
     return (
         <section className="ct-aboutSection ct-u-backgroundBlack section" id="about-us">
             <Container>
-                <Row className="">
-                    <Col md={6} sm={6} className="ct-aboutSection-imageBox ct-u-paddingTop50">
+                <Row className="ct-u-paddingBottom50">
+                    <Col md={6} sm={6} className="ct-aboutSection-imageBox ct-u-paddingTop50 ">
                         <h3 className="ct-fw-700 ct-u-colorWhite">{t('Title')}</h3>
                         {/*img src="assets/images/content/about-us.png" alt="Image"/> */}
                     </Col>

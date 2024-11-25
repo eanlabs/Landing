@@ -66,15 +66,25 @@ function ContactForm() {
     };
 
     return(
-        <Col md={4} className="text-center contact-form">
+        <Col md={4} className="text-center contact-form pt-5">
             {il ?
-                <p className="h5 ct-u-colorWhite ct-fw-700">
-                    {t("appName")} {t("inIL")} {t("phone")}
-                </p>
-            :
-                <p className="h5 ct-u-colorWhite ct-fw-700">
-                    {t("appName")} {t("inUA")} {t("phoneua")}
-                </p>
+                <span>
+                    <p className="h5 ct-u-colorWhite ct-fw-700">
+                        {t("appName")} {t("inIL")}
+                    </p>
+                    <p className="h5 ct-u-colorWhite ct-fw-700">
+                        {t("phone")}
+                    </p>
+                </span>
+                :
+                <span>
+                    <p className="h5 ct-u-colorWhite ct-fw-700">
+                        {t("appName")} {t("inUA")}
+                    </p>
+                    <p className="h5 ct-u-colorWhite ct-fw-700">
+                        {t("phoneua")}
+                    </p>
+                </span>
             }
             <p className="h5 text-center ct-u-paddingBottom15 ct-u-colorWhite ct-fw-700">{t("mail")}</p>
             <Form noValidate validated={validated} onSubmit={handleSubmit} data-bs-theme="dark">

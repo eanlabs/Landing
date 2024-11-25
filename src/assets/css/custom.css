@@ -312,6 +312,12 @@ body{
     }
 }
 
+@media screen and (max-width: 991px) {
+    #obituaries{
+        margin-top: 0!important;
+    }
+}
+
 /***************  Brand New  ***************************/
 
 .ct-u-backgroundBlack{
